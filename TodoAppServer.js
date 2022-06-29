@@ -85,6 +85,7 @@ app.get(/[/+A-Za-z0-9_~]*/, function (req, res) {
 
 
 // use file storage
+console.log(argv);
 var fileStorage = new Swarm.FileStorage(argv.store);
 
 // create Swarm Host
